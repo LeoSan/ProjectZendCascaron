@@ -1,0 +1,131 @@
+
+form label.error, label.error {
+    color: red;
+    font-style: italic;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+  /*  background-color: bisque;*/
+    width: 439px;
+    padding: 5px;
+    /*border: 1px solid red;*/
+    margin-left: 10%;
+
+}
+.glyphicon-red {
+    color: red !important;
+}
+
+.btnAccionEdit{
+    cursor: pointer;
+    color: #0c57d3;
+    margin-right: 10px;
+}
+
+.btnAccionDel{
+    cursor: pointer;
+    color: #d36a66;
+    margin-right: 10px;
+}
+.btnAccionBitacora{
+    cursor: pointer;
+    color: #58af54;
+    margin-right: 10px;
+}
+
+.btnValSolicitud{
+    cursor: pointer;
+    color: #fca041;
+    margin-right: 10px;
+}
+
+.btnDetalle{
+    cursor: pointer;
+    color: #58af54;
+    margin-right: 10px;
+}
+
+.btnValEntrega{
+    cursor: pointer;
+    color: #58af54;
+    margin-right: 10px;
+}
+
+.btnValEstatus{
+    cursor: pointer;
+    color: #fca041;
+    margin-right: 10px;
+}
+
+
+.btnAccionEdit:hover{
+    color: blue;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+
+.btnAccionDel:hover{
+    color: #ff130a;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+
+.btnValEstatus:hover{
+    color: #ec983c;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+
+.pCenter{
+    text-align: center !important;
+}
+.pTamanio{
+    font-size: 30px !important;
+    font-weight: bold !important;
+}
+
+.btnAccionBitacora:hover{
+    color: #2d6327;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+.btnDetalle:hover{
+    color: #2d6327;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+.btnValSolicitud:hover{
+    color: #ec983c;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+.btnValEntrega:hover{
+    color: #2d6327;
+    -moz-transform: scale(2.2);
+    -webkit-transform: scale(2.2);
+    -o-transform: scale(2.2);
+    -ms-transform: scale(2.2);
+    transform: scale(2.2)
+}
+
+.formatoNombre{
+    text-transform: capitalize;
+}

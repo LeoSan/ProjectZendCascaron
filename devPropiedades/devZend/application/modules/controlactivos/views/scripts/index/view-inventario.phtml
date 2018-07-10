@@ -1,0 +1,95 @@
+<!--CONTENIDO-->
+
+    <div class="card card-table">
+        <div class="card-header">Cátalogo construcción
+            <div class="tools">
+                <button id="btnRegistrar" name="btnRegistrar" data-toggle="modal" data-target="#form-bp1" class="btn btn-space btn-secondary active"><i class="icon mdi mdi-collection-plus"></i> Registrar </button>
+            </div>
+        </div>
+        <div class="card-header-divider"></div>
+        <div class="card-body">
+            <span class="msjRespuesta"> </span>
+            <!-- Inicio de tabla -->
+            <table id="dt_proveedor" class="display">
+                <thead>
+                <tr>
+                    <th>CÓDIGO</th>
+                    <th>NOMBRE</th>
+                    <th>CREDITO</th>
+                    <th>ESTATUS</th>
+                    <th>UBICACIÓN</th>
+                    <th>ACCIÓN</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <!-- FIN  Inicio de tabla -->
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="<?php echo $this->baseUrl; ?>/js/activo/view-proveedor.js"></script>
+
+    <!--MODAL-->
+    <div id="form-bp1" tabindex="-1" role="dialog" class="modal fade colored-header colored-header-success"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <form id="formProveedor" name="formProveedor">
+                <!-- Campos hidden -->
+                <input id="inptProceso" name="inptProceso" type="hidden" value="Guardar"/>
+                <input id="inpId" name="inpId" type="hidden" />
+
+                <div class="modal-content">
+                <div class="modal-header modal-header-colored">
+                    <h3 id="bntTitulomodal" class="modal-title"> <i id="icoTitulo" class="icon mdi mdi-collection-plus"></i>  <span id="spTitulomodalRegEdit">Registrar</span>  proveedor</h3>
+                    <button name="btnCerrarX" type="button" data-dismiss="modal" aria-hidden="true" class="close md-close"><span
+                            class="mdi mdi-close"> </span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label><h5><span class="glyphicon-red"> ( * )</span> Nombre:</h5></label>
+                        <input id="inpNombre" name="inpNombre" type="text" placeholder="Ingrese nombre proveedor" class="form-control soloLetrasNum">
+                        <!-- Componente Mesj-->
+                        <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                        </div>
+                        <!-- Componente Mesj-->
+                    </div>
+                    <div class="form-group">
+                        <label><h5><span class="glyphicon-red"> ( * )</span> Número de credito:</h5></label>
+                        <input id="inpCredito" name="inpCredito" type="text" maxlength="20" placeholder="Ingrese numero de credito" class="form-control soloLetrasNum">
+                        <!-- Componente Mesj-->
+                        <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                        </div>
+                        <!-- Componente Mesj-->
+                    </div>
+
+                    <div class="form-group">
+                        <label><h5><span class="glyphicon-red"> ( * )</span>  Descripción :</h5></label>
+                        <textarea id="inpDes" name="inpDes" placeholder="Ingrese una descripción del proveedor" class="form-control soloLetrasNum" cols="3" rows="3" ></textarea>
+                        <!-- Componente Mesj-->
+                        <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                        </div>
+                        <!-- Componente Mesj-->
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label class="custom-control">
+                                ( * )  <span class="custom-control-label">Los campos con asterisco son obligatorios.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label  class="custom-control msjRespuesta" >  </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnCerrar" name="btnCerrar" type="button" data-dismiss="modal" class="btn btn-default md-close">Cerrar</button>
+                    <button id="btnGuardar" name="btnGuardar" type="submit" class="btn btn-success"> <span id="sTituloBoton"> Registar </span>   </button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Test - Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script type="text/javascript">
+		  var baseUrl = '<?=$this->baseUrl?>';
+	  </script>
+
+     <!-- Componente Material Desing -->
+    <link rel="stylesheet" media="screen" href="<?=$this->baseUrl?>/css/app.css">
+    <link rel="stylesheet" media="screen" href="<?=$this->baseUrl?>/css/material-design-iconic-font.min.css">
+
+      <!-- Componente Bootstrap -->
+      <link rel="stylesheet"  href="<?php echo $this->baseUrl; ?>/lib/bootstrap3/bootstrap.min.css">
+      <script type="text/javascript" src="<?php echo $this->baseUrl; ?>/lib/bootstrap3/jquery.js"></script>
+      <script type="text/javascript" src="<?php echo $this->baseUrl; ?>/lib/bootstrap3/bootstrap.min.js"></script>
+
+      <!-- jqDialog -->
+      <link rel="stylesheet" href="<?php echo $this->baseUrl; ?>/lib/jqDialog/bootstrap-dialog.min.css">
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqDialog/bootstrap-dialog.min.js"></script>
+
+      <!-- Datatable-->
+      <link rel="stylesheet" type="text/css" href="<?=$this->baseUrl?>/lib/datatables/datatables.css">
+      <script type="text/javascript" charset="utf8" src="<?=$this->baseUrl?>/lib/datatables/datatables.js"></script>
+
+      <!--Libreria jqValidate-->
+      <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseUrl; ?>/lib/jqValidate/estilos.css">
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqValidate/jquery.form.js" type="text/javascript"></script>
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqValidate/jquery.validate.js" type="text/javascript"></script>
+
+      <!--jqCalendario-->
+      <link rel="stylesheet" type="text/css" media="screen" href="<?php echo $this->baseUrl; ?>/lib/jqCalendario/bootstrap-datetimepicker.min.css">
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqCalendario/moment.min.js" type="text/javascript"></script>
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqCalendario/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+      <script src="<?php echo $this->baseUrl; ?>/lib/jqCalendario/bootstrap-datetimepicker.es.js" type="text/javascript"></script>
+
+    <!--jq Complete -->
+    <script src="<?php echo $this->baseUrl; ?>/lib/jqComplete/typeahead.min.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+  	<div id="layoutMain" class="main-content container-fluid">
+  		<?php echo $this->layout()->content; ?>
+  	</div>
+
+  </body>
+</html>

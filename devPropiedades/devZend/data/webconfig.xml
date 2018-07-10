@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+    <project> 
+
+        <smarty>
+            <templateDirectory>application/views/scripts</templateDirectory>
+            <compileDirectory>cache/smarty/compile/</compileDirectory>
+            <cacheDirectory>cache/smarty/cache</cacheDirectory>
+        </smarty>
+        <global>
+            <wspm_server></wspm_server>
+            <wsdl></wsdl>
+        </global>
+        <dbmysql>
+        	<database>
+        		<adapter>pdo_mysql</adapter>
+        		<params>
+        			<username>root</username>
+        			<password>123456</password>
+        			<dbname>devtest</dbname>
+        			<profiler>0</profiler>
+        			<charset>utf_8</charset>
+        			<server>localhost</server>
+				</params>
+			</database>
+        </dbmysql>
+    </project>
+</configdata>
